@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Modern Portfolio Theme - Light Golden with Charcoal
+   * Colors are expressed as HSL values for tailwind compatibility
+  */
+  :root {
+    /* Base theme colors */
+    --background: 45 33% 98%;
+    --foreground: 210 11% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    --primary: 210 11% 15%;
+    --primary-foreground: 45 33% 98%;
+
+    --secondary: 45 25% 94%;
+    --secondary-foreground: 210 11% 15%;
+
+    --muted: 45 25% 94%;
+    --muted-foreground: 210 6% 46%;
+
+    --accent: 45 25% 94%;
+    --accent-foreground: 210 11% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 20% 90%;
+    --input: 45 20% 90%;
+    --ring: 210 11% 15%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --golden-50: 45 50% 97%;
+    --golden-100: 45 40% 93%;
+    --golden-200: 45 35% 87%;
+    --golden-300: 45 30% 78%;
+    --golden-400: 45 25% 68%;
+    --golden-500: 45 20% 58%;
+    --golden-600: 45 15% 48%;
+
+    --charcoal-50: 210 15% 95%;
+    --charcoal-100: 210 15% 90%;
+    --charcoal-200: 210 15% 80%;
+    --charcoal-300: 210 15% 70%;
+    --charcoal-400: 210 15% 60%;
+    --charcoal-500: 210 15% 50%;
+    --charcoal-600: 210 15% 40%;
+    --charcoal-700: 210 15% 30%;
+    --charcoal-800: 210 15% 20%;
+    --charcoal-900: 210 15% 10%;
+
+    --royal-blue: 231 72% 45%;
+    --teal-accent: 178 64% 47%;
+  }
+
+  .dark {
+    --background: 210 15% 8%;
+    --foreground: 45 33% 98%;
+
+    --card: 210 15% 10%;
+    --card-foreground: 45 33% 98%;
+
+    --popover: 210 15% 10%;
+    --popover-foreground: 45 33% 98%;
+
+    --primary: 45 33% 98%;
+    --primary-foreground: 210 15% 8%;
+
+    --secondary: 210 15% 15%;
+    --secondary-foreground: 45 33% 98%;
+
+    --muted: 210 15% 15%;
+    --muted-foreground: 210 6% 65%;
+
+    --accent: 210 15% 15%;
+    --accent-foreground: 45 33% 98%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 15% 15%;
+    --input: 210 15% 15%;
+    --ring: 45 33% 98%;
+
+    /* Dark mode portfolio colors */
+    --golden-50: 45 25% 15%;
+    --golden-100: 45 30% 20%;
+    --golden-200: 45 35% 30%;
+    --golden-300: 45 40% 40%;
+    --golden-400: 45 45% 50%;
+    --golden-500: 45 50% 60%;
+    --golden-600: 45 55% 70%;
+
+    --charcoal-50: 210 15% 90%;
+    --charcoal-100: 210 15% 80%;
+    --charcoal-200: 210 15% 70%;
+    --charcoal-300: 210 15% 60%;
+    --charcoal-400: 210 15% 50%;
+    --charcoal-500: 210 15% 40%;
+    --charcoal-600: 210 15% 30%;
+    --charcoal-700: 210 15% 20%;
+    --charcoal-800: 210 15% 15%;
+    --charcoal-900: 210 15% 10%;
+
+    --royal-blue: 231 72% 65%;
+    --teal-accent: 178 64% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-golden-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-golden-400 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-golden-500;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-golden-500 to-golden-600 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-lg bg-white/80 border border-white/20;
+  }
+
+  .dark .glass-effect {
+    @apply backdrop-blur-lg bg-charcoal-900/80 border border-charcoal-700/20;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-golden-400 to-golden-500 hover:from-golden-500 hover:to-golden-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-charcoal-800 text-charcoal-800 hover:bg-charcoal-800 hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .dark .btn-secondary {
+    @apply border-golden-400 text-golden-400 hover:bg-golden-400 hover:text-charcoal-900;
+  }
+}
