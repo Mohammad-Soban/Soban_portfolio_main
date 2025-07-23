@@ -42,12 +42,12 @@ export const PROJECTS: Project[] = [
     title: "Gourd Detection using YOLOv8",
     category: "Computer Vision",
     description:
-      "Advanced object detection system for agricultural automation using state-of-the-art YOLOv8 architecture with real-time inference capabilities.",
-    tech: ["Python", "YOLOv8", "OpenCV", "PyTorch", "CUDA"],
+      "Processed images with OpenCV and deployed a YOLOv8 model for real-time gourd detection, achieving mAP50 of 0.87-0.99 and mAP50-95 of 0.73-0.94.",
+    tech: ["Python", "YOLOv8", "OpenCV", "PyTorch", "Roboflow"],
     image:
       "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop&crop=center",
     github: `https://www.kaggle.com/code/soban1103/notebook12a19e10d1`,
-    demo: "#",
+    demo: "https://drive.google.com/file/d/158bk52Gu4TLKu3mJsxNr67QtwLZ8us0s/view?usp=drive_link",
     impact: "95% accuracy in real-time detection",
     gradient: "from-green-400 to-blue-500",
   },
@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     title: "Power-CO Churn Analysis",
     category: "Machine Learning",
     description:
-      "Predictive modeling system for customer churn using advanced Random Forest Classifier with comprehensive feature engineering and hyperparameter tuning.",
+      "Cleaned customer data and ovesampled the dataset using SMOTE, developed a Random Forest Classifier for churn prediction achieving 95% accuracy with hyperparameter tuning and feature engineering.",
     tech: ["Python", "Random Forest", "Scikit-Learn", "Pandas", "Numpy"],
     image: '/churn_prediction.jpeg',
     github: `${CONTACT_INFO.github}/Power_Co_Analysis`,
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     title: "Loan Default Prediction",
     category: "Data Science",
     description:
-      "Comprehensive ML pipeline with interactive dashboards for financial risk assessment and loan default prediction using ensemble methods.",
+      "Cleaned and transformed loan data using Python, visualized key patterns and created interactive dashboards with Power BI, and built SVM and Logistic Regression Models achieving 86.7% accuracy in default prediction.",
     tech: [
       "Python",
       "Scikit-learn",
@@ -83,15 +83,15 @@ export const PROJECTS: Project[] = [
     gradient: "from-purple-400 to-indigo-500",
   },
   {
-    title: "Neural Style Transfer App",
-    category: "Deep Learning",
+    title: "Automated Tracksheet Generation For Integrity Solutions",
+    category: "Automation - Freelance",
     description:
-      "Real-time artistic style transfer application using convolutional neural networks with optimized mobile deployment.",
-    tech: ["TensorFlow", "Python", "React", "WebGL", "Mobile Optimization"],
+      "Developed an automated tracksheet generation tool using Python and Streamlit, streamlining data entry and reporting processes, saving 20 hours of manual work monthly.",
+    tech: ["Python", "Streamlit", "Pandas", "Ms-Excel"],
     image:
-      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&h=400&fit=crop&crop=center",
-    github: `${CONTACT_INFO.github}/neural-style-transfer`,
-    demo: "#",
+      "/automation.jpeg",
+    github: `${CONTACT_INFO.github}/Automate_Tracksheet`,
+    demo: "https://automatetracksheet-soban.streamlit.app/",
     impact: "Real-time processing on mobile devices",
     gradient: "from-orange-400 to-pink-500",
   },

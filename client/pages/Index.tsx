@@ -53,13 +53,17 @@ export default function Index() {
       {/* About Section */}
       <AboutSection isVisible={isVisible} />
 
-      {/* Skills Section */}
-      <SkillsSection isVisible={isVisible} />
-
       {/* Lazy-loaded sections wrapped in Suspense */}
       <React.Suspense fallback={<div className="h-20 flex items-center justify-center">Loading...</div>}>
         <ProjectsSection isVisible={isVisible} />
         <ExperienceSection isVisible={isVisible} />
+      </React.Suspense>
+
+      {/* Skills Section */}
+      <SkillsSection isVisible={isVisible} />
+
+      {/* Certifications Section */}
+      <React.Suspense fallback={<div className="h-20 flex items-center justify-center">Loading...</div>}>
         <CertificationsSection />
       </React.Suspense>
 
