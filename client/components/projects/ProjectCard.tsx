@@ -21,15 +21,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-60 transition-opacity duration-300`}
         ></div>
 
-        {/* Category badge */}
-        <div className="absolute top-4 md:top-6 left-4 md:left-6">
-          <span className="bg-white/90 dark:bg-charcoal-800/90 backdrop-blur-sm text-charcoal-800 dark:text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
+        {/* Category and Impact badges (responsive layout) */}
+        <div className="absolute top-4 md:top-6 left-4 md:left-6 flex flex-col md:flex-row md:items-center md:space-x-2">
+          <span className="bg-white/90 dark:bg-charcoal-800/90 backdrop-blur-sm text-charcoal-800 dark:text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg mb-2 md:mb-0">
             {project.category}
           </span>
-        </div>
-
-        {/* Impact badge */}
-        <div className="absolute top-4 md:top-6 right-4 md:right-6">
           <span className="bg-green-500/90 text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
             {project.impact}
           </span>
