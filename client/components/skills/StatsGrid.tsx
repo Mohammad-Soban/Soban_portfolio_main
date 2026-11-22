@@ -6,7 +6,7 @@ export const StatsGrid: React.FC = () => {
     { number: "15+", label: "Technologies Mastered", icon: Code2 },
     { number: "7+", label: "Projects Completed", icon: Target },
     { number: "80%", label: "Cost Reduction Achieved", icon: TrendingUp },
-    { number: "9", label: "Months Experience", icon: Calendar },
+    { number: "2+", label: "Years Experience", icon: Calendar },
   ];
 
   return (

@@ -33,6 +33,8 @@ export interface Experience {
   achievements: string[];
   technologies: string[];
   companyLogo: string;
+  current?: boolean;
+  roleType?: string;
 }
 
 export interface Certification {

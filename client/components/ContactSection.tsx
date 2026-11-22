@@ -189,9 +189,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     </div>
                   </div>
                   <div>
-                    <div className="text-xl md:text-2xl font-bold text-golden-600">9</div>
+                    <div className="text-xl md:text-2xl font-bold text-golden-600">2+</div>
                     <div className="text-xs md:text-sm text-charcoal-600 dark:text-charcoal-300">
-                      Months Experience
+                      Years Experience
                     </div>
                   </div>
                   <div>

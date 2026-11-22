@@ -15,8 +15,8 @@ export const ROLES = [
   "Data Analyst",
   "AI Engineer",
   "ML Engineer",
-  "Backend Developer",
   "MLOPS Enthusiast",
+  "Gen AI Engineer"
 ];
 
 export const SKILLS: Skill[] = [
@@ -99,6 +99,33 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    title: "Data Scientist",
+    company: "Hitech Digital Solutions",
+    period: "September 2025 - Present",
+    location: "Ahmedabad (Onsite)",
+    description:
+      "Architecting scalable multi-modal AI pipelines, vision-language systems, and automated document intelligence workflows for high-volume enterprise production environments.",
+    achievements: [
+      "Eris: Developed an end-to-end, scalable data extraction pipeline to process 1 million historical telephone directory images (≈ 2 TB) using PaddleOCR and regex-based text classification, achieving 85% field-level accuracy.",
+      "Autopix: Automated ghost mannequin image editing by leveraging Gemini prompt engineering, background removal, and batch processing pipelines, reducing manual image editing effort by 80%.",
+      "Orderbot: Developed an end-to-end cabinet detection and cost estimation pipeline for architectural drawings using a custom-trained YOLOv8 model and Qwen vision-language model, reducing false positives by 82% while achieving 98.52% recall and 98.77% precision.",
+    ],
+    technologies: [
+      "Python",
+      "PaddleOCR",
+      "Gemini API",
+      "YOLOv8",
+      "Qwen VLM",
+      "Computer Vision",
+      "Regex",
+      "Batch Processing",
+      "AWS",
+    ],
+    companyLogo: "🏢",
+    current: true,
+    roleType: "Full-Time",
+  },
+  {
     title: "Data Analyst Intern",
     company: "Medkart Pharmacy",
     period: "January 2025 - July 2025",
@@ -106,13 +133,14 @@ export const EXPERIENCES: Experience[] = [
     description:
       "Spearheaded data-driven initiatives that revolutionized operational efficiency and cost optimization through advanced analytics and automation.",
     achievements: [
-      "Migrated the Redshift data warehouse to AWS S3 by creating a robust ETL pipeline with fault tolerance.",
-      "Revamped the Business Intelligence from Power BI To Apache Superset for enhanced data visualization.",
-      "Enabled AWS Athena based querying for faster data retrieval and analysis reducing query time by 50%.",
-      "Reduced the data processing time by 30% through optimized SQL queries and indexing and saved 3-4 LPA annually by using AWS S3 and Apahche Superset."
+      "Migrated the Redshift data warehouse to AWS S3 by creating a robust ETL pipeline with fault tolerance, saving up to 1.5 GB in computational memory.",
+      "Revamped Power BI dashboards to Apache Superset, saving Rs 3-4 Lakhs per annum in reporting expenses.",
+      "Enabled AWS Athena based querying for faster data retrieval and analysis, reducing query response times significantly.",
+      "Collaborated with cross-functional teams to deliver transformed data via reports and Excel files, reducing manual effort by 70–80%.",
     ],
-    technologies: ["Python", "PostgreSQL", "S3 & Athena", "Apache Superset", "Redis Cache", "Polars", "Git/Github"],
+    technologies: ["Python", "PostgreSQL", "AWS S3", "AWS Athena", "Apache Superset", "Polars", "Redis Cache", "Git/Github"],
     companyLogo: "🏥",
+    roleType: "Internship",
   },
   {
     title: "AI Intern",
@@ -122,13 +150,14 @@ export const EXPERIENCES: Experience[] = [
     description:
       "Developed cutting-edge AI solutions and Deep Learning models for real-time data processing and predictive analytics.",
     achievements: [
-      "Worked on Time-Series forecasting models achieving 85% accuracy",
-      "Developed a Glucose Level Prediction model using Bi-Directional LSTM and CNN Layers",
-      "Deployed the model as a streamlit app for real-time glucose level prediction",
-      "Designed and implemented a comprehensive data pipeline for model training and evaluation using DVC",
+      "Performed EDA and conducted an Augmented Dickey-Fuller test to check for seasonality in glucose level data.",
+      "Built time-series forecasting models including ARMA, ARIMA, and a CNN-based deep learning model to predict glucose levels in Type 2 diabetic patients.",
+      "Implemented a deep learning model with a combination of Bidirectional LSTM and Convolutional Layers to forecast glucose levels with 63.65 RMSE.",
+      "Deployed model prototypes with Streamlit for real-time inference and managed experiments with DVC.",
     ],
     technologies: ["Python", "TensorFlow", "Keras", "Time-Series Forecasting", "Deep Learning", "Streamlit", "DVC"],
     companyLogo: "🔧",
+    roleType: "Internship",
   },
 ];
 
@@ -171,4 +200,9 @@ export const ANIMATION_DELAYS = {
   ROLE_CYCLE: 2000,
   STAGGER: 200,
   CARD: 300,
+};
+
+export const RESUME_CONSTANS = {
+  // FILE_ID: "13TZV8_A0XpYt3u3z-tbo0WOhTUH1iejt"
+  FILE_ID: "1YpJZ-6mAYyY9fWL22__XviVsKC8uaWxC"
 };
